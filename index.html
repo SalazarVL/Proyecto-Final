@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- 2.1. Dentro del archivo HTML, enlaza el archivo CSS al HTML.-->
+    <link rel="stylesheet" href="./app.css">
+
+    <!-- 1. Crear un header -->
+    <title>Proyecto final frontend- tienda de muebles</title>
+
+
+    <!-- 5. Importa las fuentes Playfair y Relaway de Google FontSync.-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Raleway&display=swap" rel="stylesheet">
+
+    <!-- se manda llamar los estilos css del framework de boostrap mediante CDN, las propiedades integrity y crossorigin no son necesarias pero son utiles para la seguridad de la página y para el usuario -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+</head>
+
+<body>
+    <!-- 2.Crea un span para el título Tienda Muebles y aplícale el color #037BC0 a la palabra Muebles.-->
+    <!-- <header class="Titulo">
+            <h1 style="font-family: 'Raleway', sans-serif;">TIENDA DE <span style="color: #037BC0;">MUEBLES</span></h1>
+    </header> -->
+
+    <!-- 2.2 a) Crea una clase para que puedas aplicarle el color #037BC0 a la palabra Muebles en
+    el titulo Tienda Muebles y que luzca como la imagen maqueta.jpg. -->
+
+    <header class="Titulo text-center fw-bold">
+        <h1>TIENDA DE <span>MUEBLES</span></h1>
+    </header>
+
+
+    <!-- 3. Crea la barra de navegación (nav) con al menos cinco opciones-->
+    <!-- barra normal-->
+    <!-- <nav>
+        <ul>
+            <li><a href="">Inicio</a></li>
+            <li><a href="">Nosotros</a></li>
+            <li><a href="">Tienda</a></li>
+            <li><a href="">Blog</a></li>
+            <li><a href="">Galeria</a></li>
+            <li><a href="">Contacto</a></li>
+        </ul>
+    </nav> -->
+
+    <!--Barra con Bootstrap-->
+    <!-- <nav class="navbar navbar-expand-lg bg-body-tertiary bg-primary-subtle"> -->
+    <nav class="navbar navbar-expand-lg bg-light bg-primary-subtle mt-4 mb-1">
+        <div class="container-fluid ">
+            <a class="navbar-brand" href="#">Inicio</a>
+            <a class="navbar-brand" href="#">Nosotros</a>
+            <a class="navbar-brand" href="#">Tienda</a>
+            <a class="navbar-brand" href="#">Blog</a>
+            <a class="navbar-brand" href="#">Galeria</a>
+            <a class="navbar-brand" href="#">Contacto</a>
+    </nav>
+
+
+
+    <!-- 4. Crea un div para la sección hero.
+    </section> -->
+    <!-- 2.3. Crea una clase hero y establece una imagen de fondo (utiliza la imagen principal.jpg).
+    Realiza los cambios para que en el formato normal se vea de 25rem. Confirma que la
+    imagen se vea completa, estableciendo el valor cover para el tamaño y la posición del fondo.-->
+
+    <!-- <section Class="Hero">
+        <img src="./principal.jpg" alt="Imagen principal">
+    </section> -->
+
+
+    <article class="hero-image">
+        <div class="d-flex flex-column d-flex justify-content-center align-items-center text-center ">
+            <h1></h1>
+        </div>
+    </article>
+
+
+
+    <!-- 7. Utiliza la etiqueta para crear la sección principal de la página-->
+    <!-- <main class="col-md-12 d-flex flex-column vh-100 border border-3 border-white"> -->
+    <main>
+        <!-- 6. Coloca el título de la sección con h2.
+        <h2 style="font-family: 'Raleway', sans-serif;">Nuestros productos</h2> -->
+        <!-- <h1 class="row gx-0  d-flex align-items-center justify-content-center p-3 border border-3 border-white" -->
+
+        <h2 class="text-center mt-5 ">Nuestros Productos</h2>
+
+        <!-- 8.Crea dos columnas en la primera fila. En la primera columna, coloca la imagen del producto 1. 
+        En la segunda columna, agrega un fondo azul,
+        así como el nombre del producto (h3), la descripción, el precio y un botón de “agregar al carrito”.-->
+
+
+        <!-- columna 1
+        <div class="Columna-1">
+            <img src="./producto1.jpg" alt="">
+        </div> -->
+
+        <!--columna 2 -->
+        <!--<div style="background-color:#acd8f1" class="Columna-2">
+            <h3 style="font-family: 'Raleway', sans-serif;">2 Recamara Juvenil blanca</h3>
+            <p class="txt descripcion" style="font-size: large;">Estilo modernista, pensada en adolescentes.</p>
+            <span style="font-size: large">
+                Consta de cabecera, box, colchon, mueble tipo closet con escritorio. No incluye la silla.
+                Fabricada en madera de pino
+            </span>
+            <span style="font-size: larger;">Precio $20,000</span>
+            <p><button>Agregar al carrito</button></p>
+        </div> -->
+
+        <!-- 9. En la siguiente fila, crea dos columnas. En cada una de ellas, coloca las imágenes de los productos 2 y 3, respectivamente. 
+                Dentro de un div, coloca la información del producto (nombre, descripción, precio y el botón de “agregar al carrito”) con el fondo azul.-->
+        <!-- columna 1 -->
+        <!-- <section class="row gx-0 align-items-center flex-grow-1" id="seccion-1"> -->
+        <section class="mt-3" id="seccion-1">
+            <article class="row gx-0 flex-grow-1">
+                <figure class="col-lg-6 d-flex-row align-items-center justify-content-center">
+                    <img src="./producto1.jpg" class="figure-img img-fluid rounded" alt="...">
+                </figure>
+                <div class="col-lg-6 bg-primary-subtle d-flex-row text-center">
+                    <h3 class="p-5 fw-bold "> Recamara Juvenil blanca</h3>
+                    <p class="p-2 fs-4">Estilo modernista, pensada en adolescentes.</p>
+                    <span class="p-2 fs-5">
+                        Consta de cabecera, box, colchón, mueble tipo closet con escritorio.
+                        La silla no esta Incluida.
+                        Fabricada en madera de pino
+                    </span>
+                    <p class="p-3 fs-5 fw-bold">Precio $20,000</p>
+                    <p class="p-3"> <button type="button" class="btn btn-dark">Agregar al carrito</button></p>
+                </div>
+            </article>
+        </Section>
+
+
+
+        <!-- <div class="Columna-3">
+            <img src="./producto2.jpg" alt="">
+        </div>
+        <div class="Columna-4">
+            <img src="./producto3.jpg" alt="">
+        </div>
+        <div style=background-color:#acd8f1 class="Columna-5">
+            <h3 style="font-family: 'Raleway', sans-serif;">Consola de entrada</h3>
+            <p style="font-size: large;">Practica y espacioso para la entrada </p>
+            <p style="font-size: large;">Fabricada en madera de pino, con finos acabados. En varios colores
+            </p>
+            <span style="font-size: larger;">Precio $8,000</span>
+            <p><button>Agregar al carrito</button></p>
+        </div>
+        <div style=background-color:#acd8f1 class="Columna-6">
+            <h3 style="font-family: 'Raleway', sans-serif;">Recamara Matrimonial</h3>
+            <p style="font-size: large;">Estio modernista</p>
+            <p style="font-size: large;">Consta de cabecera y buros estilo mesa redonda. Fabricada en madera de
+                pino</p>
+            <span style="font-size: larger;">Precio $15,000</span>
+            <p><button>Agregar al carrito</button></p>
+        </div> -->
+
+        <section class="my-5 row gx-0 " id="seccion-2">
+            <article class="col-lg-6 d-flex-row align-items-stretch">
+                <!-- <article style="flex:1; flex-direction: column;"   class="col-lg-6 d-flex-row "> -->
+                <!-- <figure class=" d-flex-row align-tems-center justify-content-center">
+                    <img src="./producto2.jpg" class="figure-img img-fluid rounded" alt="...">
+                </figure> -->
+                <img src="./producto2.jpg" alt="...">
+                <!-- <div style="flex:1;"  class=" bg-primary-subtle d-flex-row text-center"> -->
+                <div class=" bg-primary-subtle d-flex-row text-center align-items-stretch">
+                    <h3 class="p-5 fw-bold "> Consola de entrada</h3>
+                    <p class="p-2 fs-4">Estilo modernista</p>
+                    <span class="p-2 fs-5">
+                        Consta de cabecera y buros estilo mesa redonda.
+                        <!-- Fabricada en madera de pino. -->
+                    </span>
+                    <p class="p-3 fs-5 fw-bold">Precio $15,000</p>
+                    <p class="p-3"> <button type="button" class="btn btn-dark">Agregar al carrito</button></p>
+                </div>
+            </article>
+            <article style="flex:1; flex-direction: column;" class="col-lg-6 d-flex-row ">
+                <!-- <figure class="d-flex-row align-items-center justify-content-center">
+                    <img src="./producto3.jpg" class="figure-img img-fluid rounded" alt="...">
+                </figure> -->
+                <img src="./producto3.jpg" alt="...">
+                <div style="flex:1;" class="bg-primary-subtle d-flex-row text-center">
+                    <h3 class="p-5 fw-bold "> Recamara Matrimonial</h3>
+                    <p class="p-2 fs-4">Practica y espacioso para la entrada.</p>
+                    <span class="p-2 fs-5">
+                        Incluye base y buros. Fabricada en madera de pino, con finos acabados. En varios colores.
+                    </span>
+                    <p class="p-3 fs-5 fw-bold">Precio $8,000</p>
+                    <p class="p-3"> <button type="button" class="btn btn-dark">Agregar al carrito</button></p>
+                </div>
+            </article>
+        </Section>
+
+
+        <!-- 10. Crea una fila y tres columnas para que coloques la imagen 4, 5 y 6, respectivamente. 
+                En cada columna, coloca un div con la información del producto (nombre, descripción, precio y el botón de “agregar al carrito”) con el fondo azul.-->
+        <!-- <div class="Columna-7">
+            <img src="./producto4.jpg" alt="">
+        </div>
+        <div class="Columna-8">
+            <img src="./producto5.jpg" alt="">
+        </div>
+        <div class="Columna-9">
+            <img src="./producto6.jpg" alt="">
+        </div>
+        <div style=background-color:#acd8f1 class="Columna-10">
+            <h3 style="font-family: 'Raleway', sans-serif;">Hermoso sillon de 3 plazas</h3>
+            <p style="font-size: large;">Cómodo y Practico para sala o cuarto de TV </p>
+            <p style="font-size: large;">Tela 100% lavable y finos acabados. En varios colores</p>
+            <span style="font-size: larger;">Precio $10,000</span>
+            <p><button>Agregar al carrito</button></p>
+        </div> -->
+        <!-- <div style=background-color:#acd8f1 class="Columna-11">
+            <h3 style="font-family: 'Raleway', sans-serif;">Mesa de centro</h3>
+            <p style="font-size: large;">Ideal para salas pequeñas y minimalistas</p>
+            <p style="font-size: large;">Fabricada en madera de pino</p>
+            <span style="font-size: larger;">Precio $4,000</span>
+            <p><button>Agregar al carrito</button></p>
+        </div>
+        <div style=background-color:#acd8f1 class="Columna-12">
+            <h3 style="font-family: 'Raleway', sans-serif;">Sillón de 2 plazas</h3>
+            <p style="font-size: large;">Cómodo y Practico para sala o cuarto de TV </p>
+            <p style="font-size: large;">Tela 100% lavable y finos acabados. En varios colores</p>
+            <span style="font-size: larger;">Precio $7,000</span>
+            <p><button>Agregar al carrito</button></p>
+        </div> -->
+
+        <section class="my-5 row gx-0 " id="seccion-3">
+            <article class="col-lg-4 d-flex-row align-items-center justify-content-center">
+                <figure class=" d-flex-row align-items-center justify-content-center">
+                    <img src="./producto4.jpg" class="figure-img img-fluid rounded" alt="...">
+                </figure>
+                <div class=" bg-primary-subtle d-flex-row text-center">
+                    <h3 class="p-5 fw-bold ">Hermoso sillon de 3 plazas</h3>
+                    <p class="p-2 fs-4">Cómodo y Practico para sala o cuarto de TV </p>
+                    <span class="p-2 fs-5">
+                        Tela 100% lavable y finos acabados. En varios colores
+                    </span>
+                    <p class="p-3 fs-5 fw-bold">Precio $10,000</p>
+                    <p class="p-3"> <button type="button" class="btn btn-dark">Agregar al carrito</button></p>
+                </div>
+            </article>
+            <article class="col-lg-4 d-flex-row align-items-center justify-content-center">
+                <figure class="d-flex-row align-items-center justify-content-center">
+                    <img src="./producto5.jpg" class="figure-img img-fluid rounded" alt="...">
+                </figure>
+                <div class="bg-primary-subtle d-flex-row text-center">
+                    <h3 class="p-5 fw-bold ">Mesa de centro</h3>
+                    <p class="p-2 fs-4">Ideal para salas pequeñas y minimalistas</p>
+                    <span class="p-2 fs-5">
+                        Mesa redonda con diametro 60cm. Fabricada en madera de pino
+                    </span>
+                    <p class="p-3 fs-5 fw-bold">Precio $4,000</p>
+                    <p class="p-3"> <button type="button" class="btn btn-dark">Agregar al carrito</button></p>
+                </div>
+            </article>
+            <article class="col-lg-4 d-flex-row align-items-center justify-content-center">
+                <figure class="d-flex-row align-items-center justify-content-center">
+                    <img src="./producto6.jpg" class="figure-img img-fluid rounded" alt="...">
+                </figure>
+                <div class="bg-primary-subtle d-flex-row text-center">
+                    <h3 class="p-5 fw-bold ">Sillón de 2 plazas</h3>
+                    <p class="p-2 fs-4">Cómodo y Practico para sala o cuarto de TV</p>
+                    <span class="p-2 fs-5">
+                        Tela 100% lavable y finos acabados. En varios colores
+                    </span>
+                    <p class="p-3 fs-5 fw-bold">Precio $7,000</p>
+                    <p class="p-3"> <button type="button" class="btn btn-dark">Agregar al carrito</button></p>
+                </div>
+            </article>
+        </Section>
+        <h2 class="text-center">Categorías</h2>
+
+
+
+
+
+
+
+        <!-- 11. Crea una nueva sección que tenga como título las categorías de productos con h2. -->
+        <!-- <h2> CATEGORIAS DE PRODUCTOS</h2> -->
+
+        <!-- 12. Crea una fila con tres columnas. En cada columna vas a poner una categoría y cada
+                categoría de los productos contará con una imagen (incluidas en las imágenes del
+                proyecto) y un enlace (como la página es para efectos demostrativos, coloca un # en
+                el href de la etiqueta a).-->
+        <!-- <section class="" Catego">
+        <div>
+            <img src="./categoria1.jpg" alt="">
+            <p><a target href="https://dico.com.mx/df/sala/sofa-y-love-seat.html">Salas</p></a>
+        </div>
+        <div>
+            <img src="./categoria2.jpg" alt="">
+            <p><a href="https://dico.com.mx/df/recamara.html">Espacio TV</a></p>
+        </div>
+        <div>
+            <img src="./categoria3.jpg" alt="">
+            <p><a href="https://dico.com.mx/df/comedor.html">Comedores</a></p>
+        </div>
+    </section> -->
+
+
+
+        <section class="my-5 row gx-0 " id="categorias">
+            <!-- OFICINA -->
+            <article class="col-lg-4 d-flex-row align-items-center justify-content-center">
+                <div class=" d-flex-row align-items-center justify-content-center">
+                    <img src="./categoria1.jpg" class="figure-img img-fluid rounded" alt="...">
+                    <h2 class="pt-1 text-center my-3 fs-4 text-primary">Oficina</h2>
+                </div>
+            </article>
+
+            <!-- HOGAR -->
+            <article class="col-lg-4 d-flex-row align-items-center justify-content-center">
+                <div class="d-flex-row align-items-center justify-content-center">
+                    <img src="./categoria2.jpg" class="figure-img img-fluid rounded" alt="...">
+                    <h2 class="pt-1 text-center my-3 fs-4 text-primary">Hogar</h2>
+                </div>
+            </article>
+
+            <!-- COCINA -->
+            <article class="col-lg-4 d-flex-row align-items-center justify-content-center">
+                <div class=" d-flex-row align-items-center justify-content-center">
+                    <img src="./categoria3.jpg" class="figure-img img-fluid rounded" alt="...">
+                    <h2 class="pt-1 text-center my-3 fs-4 text-primary">Cocina</h2>
+                </div>
+            </article>
+        </section>
+
+    </main>
+
+    <!-- 13. Crea el footer, así como una fila con tres columnas iguales, asignando con h3 a cada
+            una de las columnas. En la primera, coloca el título y crea un nav con las opciones
+            Cocina, Oficina, Jardín, Cochera y Dormitorios de color negro. Deben estar centrados y
+            los enlaces sin decoración-->
+    <!-- 14. En la segunda categoría, coloca como título: “Sobre nosotros” y coloca los enlaces:
+            Nuestra historia, Misión, visión y valores, Carrera, Políticas de privacidad y Términos del
+            servicio. En la categoría de Soporte, coloca Preguntas frecuentes, Ayuda en línea, y
+            Confianza y seguridad.-->
+    <!-- <footer>
+        <section class="Pie">
+            <div>
+                <h2>Categorias</h2>
+                <nav>
+                    <ul>
+                        <li><a href="">Cocina</a></li>
+                        <li><a href="">Oficina</a></li>
+                        <li><a href="">Jardin</a></li>
+                        <li><a href="">Cochera</a></li>
+                        <li><a href="">Dormitorios</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+            <div>
+                <h2>Sobre Nosotros</h2>
+                <nav>
+                    <ul>
+                        <li><a href="">Historia</a></li>
+                        <li><a href="">Misión, visión y valores</a></li>
+                        <li><a href="">Carrera</a></li>
+                        <li><a href="">Políticas de privacidad</a></li>
+                        <li><a href="">Términos del servicio</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div>
+                <h2>Soporte</h2>
+                <nav>
+                    <ul>
+                        <li><a href="">Preguntas frecuentes</a></li>
+                        <li><a href="">Ayuda en línea</a></li>
+                        <li><a href="">Confianza y seguridad</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </section>
+    </footer> -->
+    <footer>
+        <section class="my-5 row gx-0 text-center  bg-primary-subtle" id="pie">
+            <!-- CATEGORIAS -->
+            <div id="box-categorias" class="col-lg-4 d-flex-row align-items-center justify-content-center ">
+                <h3>Categorías</h3>
+                <nav>
+                    <ul class="list-inline">
+                        <li><a href="#" class="list-inline">Cocina</a></li>
+                        <li><a href="#" class="list-inline">Oficina</a></li>
+                        <li><a href="#" class="list-inline">Jardín</a></li>
+                        <li><a href="#" class="list-inline">Cochera</a></li>
+                        <li><a href="#" class="list-inline">Dormitorios</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <!-- SOBRE NOSOTROS -->
+            <div id="box-nosotros" class="col-lg-4 d-flex-row align-items-center justify-content-center ">
+                <h3>Sobre Nosotros</h3>
+                <nav>
+                    <ul class="list-inline">
+                        <li><a href="#" class="list-inline">Nuestra Historia</a></li>
+                        <li><a href="#" class="list-inline">Misión, visión y valores</a></li>
+                        <li><a href="#" class="list-inline">Carrera</a></li>
+                        <li><a href="#" class="list-inline">Políticas de privacidad</a></li>
+                        <li><a href="#" class="list-inline">Términos del servicio.</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <!-- SOPORTE -->
+            <div id="box-soporte" class="col-lg-4 d-flex-row align-items-center justify-content-center ">
+                <h3>Soporte</h3>
+                <nav>
+                    <ul class="list-inline">
+                        <li><a href="#" class="list-inline">Preguntas frecuentes</a></li>
+                        <li><a href="#" class="list-inline">Ayuda en línea</a></li>
+                        <li><a href="#" class="list-inline">Confianza y seguridad.</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </section>
+
+        <!-- DISCLAIMER -->
+        <section id="disclaimer" class="text-center  bg-dark">
+            <p>Todos los derechos reservados. Tienda de Muebles</p>
+        </section>
+
+    </footer>
+</body>
+
+</html>
